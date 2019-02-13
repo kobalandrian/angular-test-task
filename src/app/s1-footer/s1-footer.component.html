@@ -1,0 +1,41 @@
+<footer class="footer">
+    <div class="big-img">
+        <div class="container">
+            <ul class="retrive">
+                <li class="retrive-items footer-flex-container" *ngFor="let item of items">
+                    <div class="retrive-user"> {{item.first_name}} </div>
+                    <div class="point"></div>
+                    <div class="retrive-user"> {{item.email}} </div>
+                </li>
+            </ul>
+            <form class="form-container" [formGroup]="myForm" novalidate (ngSubmit)="submit()">
+                <div class="footer-flex-container ">
+                    <input type="text" placeholder="Last Name" class="right" name="last_name" formControlName="last_name">
+                    <div class="point"></div>
+                    <input type="password" placeholder="Password" class="right" name="password" formControlName="password">
+                </div>
+                <div class="input-flex-container">
+                    <input type="text" placeholder="49" class="input-code" name="country" formControlName="country">
+                    <input type="text" placeholder="Phone number" class="input-phone" style="flex-basis:79%" name="phone" formControlName="phone">
+                </div>
+                <button class="btn" [disabled]="myForm.invalid"> get free access  </button>
+            </form>
+            <div class="sec1-text">
+                <p class="sec1-text-small">We respect your privacy and your information is 100% secure.</p>
+                <div class="sec1-logo sec1-flex-container">
+                    <img class="logo" src="./assets/img/section-img1.png" alt="logo McAfee">
+                    <img class="logo" src="./assets/img/section-img2.png" alt="logo VeriSign">
+                    <img class="logo" src="./assets/img/section-img3.png" alt="logo Symantec">
+                    <img class="logo" src="./assets/img/section-img4.png" alt="logo GeoTrust">
+                    <img class="logo" src="./assets/img/section-img5.png" alt="logo SSl">
+                </div>
+                <p class="footer-text-small">Binary options present a significant opportunity for you to make serious earning, but like any investment, they present an element of risk. Potential lots of full of partial funds should be considereted at all times befor making any trade.
+                    We urge you to explore individual tax liability laws in your country of reading and recommend reading our Terms of Service for more information. Please note it is illegal under U.S. law to solicit the purchase and sale of commodit
+                    options unless explicitly listed for trading on a CFTC exchange or Legally exempt.</p>
+                <p class="footer-text-big">Terms | Privacy | Support</p>
+            </div>
+
+        </div>
+
+    </div>
+</footer>

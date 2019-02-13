@@ -1,0 +1,43 @@
+.example-container {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .example-container {
+        display: block;
+    }
+    .ico-btn {
+        margin: 0;
+        padding: 16px;
+        border: none;
+        font-size: 16px;
+    }
+    .sidenav-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: rgba(153, 153, 153, 0.692);
+        left: -680%;
+        overflow: hidden;
+    }
+    mat-sidenav {
+        margin: 0;
+        padding: 0;
+        background: buttonface;
+        width: 90%;
+        height: 120px;
+        z-index: 33;
+        overflow: hidden;
+    }
+    .list-menu {
+        margin: 0;
+        padding: 8px 0;
+        top: 0;
+        left: 0;
+        border: none;
+        font-size: 22px;
+        background: inherit;
+        color: black;
+        font-family: "Monoton", cursive;
+    }
+}

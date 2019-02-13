@@ -1,0 +1,126 @@
+<section class="sec2 container">
+    <h3 class="text-main ">Watch Live Accounts</h3>
+    <div class="card-flex-container">
+        <a class="card-item" href="#">
+            <div class="card-item2">
+                <img class="" src="./assets/img/section4-img1.png" alt="user1" />
+                <div>Erin Parkers</div>
+                <div>Starting: $300</div>
+                <div>Profit: $23,145</div>
+            </div>
+        </a>
+        <a class="card-item" href="#">
+            <div class="card-item2">
+                <img class="" src="./assets/img/section4-img2.png" alt="user2" />
+                <div>Gabriel Massie</div>
+                <div>Starting: $300</div>
+                <div>Profit: $23,145</div>
+            </div>
+        </a>
+        <a class="card-item" href="#">
+            <div class="card-item2">
+                <img class="" src="./assets/img/section4-img3.png" alt="user3" />
+                <div>Imogen Haddon</div>
+                <div>Starting: $300</div>
+                <div>Profit: $23,145</div>
+            </div>
+        </a>
+        <a class="card-item" href="#">
+            <div class="card-item2">
+                <img class="" src="./assets/img/section4-img4.png" alt="user4" />
+                <div>Benjamin Potts</div>
+                <div>Starting: $300</div>
+                <div>Profit: $23,145</div>
+            </div>
+        </a>
+    </div>
+
+    <div class="table">
+        <div class="table-points">
+            <div class="table-points-item">Open: <span class="point">7</span></div>
+            <div class="table-points-item">Won: <span class="point">320</span></div>
+            <div class="table-points-item">Lost: <span class="point">295</span></div>
+            <div class="table-points-item">Total: <span class="point">622</span></div>
+        </div>
+        <div class="table-info">
+            <div class="table-info-item">
+                <img class="table-info-img" src="./assets/img/section4-img5.png" alt="table-logo" /> <span class="bold"> Trade history</span>
+            </div>
+            <div class="table-info-item right">
+                <img class="table-info-img" src="./assets/img/reload.png" alt="table-logo" /> <span>last apdate: </span>
+            </div>
+            <div class="for-mobile">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Asset</th>
+                            <th>Position</th>
+                            <th>Amount</th>
+                            <th>Entry Rate</th>
+                            <th>Closing Rate</th>
+                            <th>Payout</th>
+                            <th>Profit</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of users">
+                            <td class="td-assets">{{item.Asset}}</td>
+                            <td class="td-position">{{item.Position}}</td>
+                            <td>${{item.Amount}}</td>
+                            <td>{{item.ERate}}</td>
+                            <td>{{item.CRate}}</td>
+                            <td>{{item.Payout}}</td>
+                            <td>{{item.Profit}}</td>
+                            <td>{{item.Date}}</td>
+                            <td>
+                                <div class="td-status">{{item.Status}} </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>USD/ZAR</td>
+                            <td>Put</td>
+                            <td>$100</td>
+                            <td>12.08325</td>
+                            <td>12.08325</td>
+                            <td>-</td>
+                            <td>-74.000</td>
+                            <td>26/01/2015 00:24</td>
+                            <td>Lost</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="table-info-item">
+                Showing 1 of
+            </div>
+            <div class="table-info-item right">
+                12345 >
+            </div>
+
+        </div>
+    </div>
+
+    <div class="sec2-text-main">
+        <h3 class="text-main ">Frequently Asked Questions</h3>
+        <hr class="hr" />
+        <p>What kind of results can I expect?</p>
+        <p>How many hours per day do I need to work?</p>
+        <hr class="hr" />
+        <p><span class="orange">Is there a maximum that I can make?</span> <br />
+            <span class="sec2-text-small">Our members typically profit a minimum of $1,000 each and every single day. That amount is to about $30,000 a month. And About $365,000a year.</span>
+        </p>
+        <hr class="hr" />
+        <p><span class="orange">How much does this cost?</span> <br />
+            <span class="sec2-text-small">The 1K Daily Profit software will cost you absolutly nothing. I am sharing this with you absolutly FREE. All you have to do is fill the form below to register to become a member.</span>
+        </p>
+        <hr class="hr" />
+        <p>Is this like MLM, Affilate Marketing or Forex?</p>
+        <p>Are there any fees?</p>
+        <hr class="hr" />
+        <br />
+    </div>
+</section>

@@ -1,0 +1,50 @@
+<header class="header">
+    <div class="big-img">
+        <!--       
+        <nav class="nav nav-flex-container">
+            <div class="nav-item left ">
+                <div class="nav-item-title-left">1</div>
+                Spot Remaining <br/> in <img class="nav-img1" src="../../assets/img/flagIsrael.svg" /> ISREAL
+            </div>
+            <div class="nav-item center">dubai lifestyle app</div>
+            <div class="nav-item right">
+                <div class="nav-item-title-right">10:03</div>
+                Time Remaining <br /> OFFER EXPIRES
+            </div>
+        </nav>
+         -->
+        <div class="container">
+            <div class="header-title">Welcome To The <span class="title">dubai lifestyle app</span> Members</div>
+            <div class="header-flex-container">
+                <div class="flex-item1 ">
+                    <div class=" video ">
+                        <embed id="sm-video" src="https://www.youtube.com/embed/79nFO8dTJfY">
+                    </div>
+                </div>
+                <div class="flex-item2 ">
+                    <ul class="retrive">
+                        <li class="retrive-items" *ngFor="let item of items">
+                            <div class="retrive-user"> {{item.first_name}} </div>
+                            <div class="retrive-user"> {{item.email}} </div>
+                        </li>
+                    </ul>
+
+                    <form class="form-container" [formGroup]="myForm" novalidate (ngSubmit)="submit()">
+                        <!--
+                                <input type="text" placeholder="First Name" name="first_name" formControlName="first_name" />
+                                <input type="text" placeholder="Email" name="email" formControlName="email" />
+                           -->
+                        <input type="text" placeholder="Last Name" name="last_name" formControlName="last_name">
+
+                        <input type="password" placeholder="Password" name="password" formControlName="password" />
+                        <div class="input-flex-container">
+                            <input type="text" placeholder="49" class="input-code" name="country" formControlName="country" />
+                            <input type="text" placeholder="Phone number" class="input-phone" style="flex-basis:79%" name="phone" formControlName="phone">
+                        </div>
+                        <button class="btn" [disabled]="myForm.invalid"> get free access </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

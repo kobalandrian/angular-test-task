@@ -1,0 +1,43 @@
+<section class="about">
+    <div class="sec1-text-main">
+        <h3 class="text-main-title-brown">Meet Scott Hathaway</h3>
+        <h5 class="about-title">CEO & Founder, DUBAI LIFESTYLE APP</h5>
+        <img class="img-about-me" src="./assets/img/section1-img1.png" alt="Photo, Scott Hathaway" />
+        <p> If you haven't yet heard, the <span class="text-main-title black"> dubai lifestyle app </span> has just launched internationally and we're looking for <span class="text-main-title orange"> 100 beta testers </span> to make profits of over. </p>
+        <p><span class="sec1-text-prize"> $ <span class="bold">7000 </span> a day</span> <br /> Watch the video now to see how you can join us
+            <span class="text-main-title orange">free</span>
+        </p>
+        <img class="img-team" src="./assets/img/section2-img1.png" alt="Team" />
+        <p>Your friend <br /> the <span class="text-main-title black">dubai lifestyle app</span> team
+        </p>
+    </div>
+    <hr class="hr" />
+
+    <div class="about-us">
+        <h3 class="text-main-title-brown">What People Are Saying</h3>
+        <ul class="comments">
+            <li class="txt">
+                <div class="txt-autor">By <span class="autor"> Linkoln Tremlin </span> on April 10, 2016
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="txt-status">Verify Member</div>
+                <div class="txt-comment">For the past 3 years, I tried everythin you could imagine to profit online. But I was seammed every single time. This was my last shot. And I couldn't be happier to announce that I made my first $6,839.23 online! </div>
+            </li>
+            <li class="txt" *ngFor="let key of comments">
+                <div class="txt-autor">By <span class="autor"> {{key.autor}} </span> on April 10, 2016
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <div class="txt-status"> {{key.status}} </div>
+                <div class="txt-comment"> {{key.text}} </div>
+            </li>
+        </ul>
+    </div>
+</section>

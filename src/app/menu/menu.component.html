@@ -1,0 +1,16 @@
+<div class="example-container">
+    <button class="ico-btn" (click)="snav.toggle()">
+          <!--
+            <mat-icon>menu</mat-icon>
+          -->
+          <i class="fa fa-bars"></i>
+        </button>
+    <mat-sidenav-container class="sidenav-container">
+        <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+            <mat-nav-list class="list-menu">
+                <a mat-list-item routerLink="">Step 1</a>
+                <a mat-list-item routerLink="/step2">Step 2</a>
+            </mat-nav-list>
+        </mat-sidenav>
+    </mat-sidenav-container>
+</div>

@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: rgb(73, 73, 73);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.hr {
+    margin: 4px 0;
+    padding: 0;
+}
+
+.about {
+    margin: 0 auto;
+    padding: 0;
+    width: 1050px;
+}
+
+.about-team {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.text-main-title-brown {
+    margin: 0;
+    padding: 12px 0 0 0;
+    font-size: 42px;
+    font-family: "Khand", sans-serif;
+    color: rgb(78, 42, 0);
+    text-align: center;
+}
+
+.about-title {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Khand", sans-serif;
+    line-height: 0.6;
+    font-weight: 300;
+}
+
+.img-about-me {
+    margin: 0 auto;
+    padding: 24px 0;
+}
+
+.sec1-text-main {
+    width: 880px;
+    margin: 0 auto;
+    padding: 12px;
+    font-size: 22px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(73, 73, 73);
+    text-align: center;
+}
+
+.img-team {
+    margin: 0 auto;
+    padding: 24px 0 0 0;
+}
+
+.text-main-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.black {
+    color: #494949;
+}
+
+.orange {
+    margin: 0;
+    padding: 0;
+    color: #f3a345;
+}
+
+.sec1-text-prize {
+    font-size: 42px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.sec1-team {
+    margin: 0;
+    padding: 0;
+}
+
+.comments {
+    margin: 0;
+    padding: 24px 0;
+    list-style: none;
+    text-align: left;
+}
+
+.txt {
+    margin: 0;
+    padding: 12px 0;
+}
+
+.txt-autor {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.autor {
+    color: #448fd1;
+}
+
+.checked {
+    color: orange;
+}
+
+.txt-status {
+    margin: 0;
+    padding: 4px 0;
+    color: orange;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.txt-comment {
+    margin: 0;
+    padding: 12px 0;
+    color: inherit;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1050px) {
+    body {
+        width: 100%;
+    }
+    .about {
+        width: 100%;
+        padding: 0 12px;
+    }
+    .sec1-text-main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    body {
+        width: 100%;
+    }
+    .about {
+        width: 100%;
+        margin: 0 12px;
+        padding: 0;
+    }
+    .sec1-text-main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .sec1-text-main {
+        width: 100%;
+        padding: 12px 0;
+    }
+    .txt {
+        margin: 0;
+        padding: 12px 16px;
+    }
+}

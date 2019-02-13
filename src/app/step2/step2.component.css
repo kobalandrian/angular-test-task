@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    app-s2-header {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: block;
+        position: relative;
+    }
+    app-s2-section1 {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: block;
+        position: relative;
+    }
+    app-s2-footer {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: block;
+        position: relative;
+    }
+}
